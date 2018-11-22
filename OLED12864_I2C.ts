@@ -183,7 +183,7 @@ namespace OLED12864_I2C {
      * @param y is Y alis, eg: 0
      * @param color is dot color, eg: 1
      */
-    //% blockId="OLED12864_I2C_PIXEL" block="set pixel at x %x|y %y|color %color"
+    //% blockId="OLED12864_I2C_PIXEL" block="instellen pixel op x %x|y %y|kleur %color"
     //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function pixel(x: number, y: number, color: number = 1) {
@@ -213,7 +213,7 @@ namespace OLED12864_I2C {
      * @param s is the text will be show, eg: 'Hello!'
      * @param color is string color, eg: 1
      */
-    //% blockId="OLED12864_I2C_SHOWSTRING" block="show string at x %x|y %y|text %s|color %color"
+    //% blockId="OLED12864_I2C_SHOWSTRING" block="schrijf tekst op x %x|y %y|tekst %s|kleur %color"
     //% weight=80 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showString(x: number, y: number, s: string, color: number = 1) {
@@ -250,7 +250,7 @@ namespace OLED12864_I2C {
      * @param num is the number will be show, eg: 12
      * @param color is number color, eg: 1
      */
-    //% blockId="OLED12864_I2C_NUMBER" block="show a Number at x %x|y %y|number %num|color %color"
+    //% blockId="OLED12864_I2C_NUMBER" block="toon Getal op x %x|y %y|getal %num|kleur %color"
     //% weight=80 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showNumber(x: number, y: number, num: number, color: number = 1) {
@@ -264,7 +264,7 @@ namespace OLED12864_I2C {
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_HLINE" block="draw a horizontal line at x %x|y %y|number %len|color %color"
+    //% blockId="OLED12864_I2C_HLINE" block="teken horizontaal lijn op x %x|y %y|lengte %len|kleur %color"
     //% weight=71 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function hline(x: number, y: number, len: number, color: number = 1) {
@@ -279,7 +279,7 @@ namespace OLED12864_I2C {
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_VLINE" block="draw a vertical line at x %x|y %y|number %len|color %color"
+    //% blockId="OLED12864_I2C_VLINE" block="teken verticale lijn van x %x|y %y|lengte %len|kleur %color"
     //% weight=72 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function vline(x: number, y: number, len: number, color: number = 1) {
@@ -295,7 +295,7 @@ namespace OLED12864_I2C {
      * @param y2 is Y alis, eg: 30
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_RECT" block="draw a rectangle at x1 %x1|y1 %y1|x2 %x2|y2 %y2|color %color"
+    //% blockId="OLED12864_I2C_RECT" block="teken vierkant x1 %x1|y1 %y1|x2 %x2|y2 %y2|kleur %color"
     //% weight=73 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function rect(x1: number, y1: number, x2: number, y2: number, color: number = 1) {
@@ -313,7 +313,7 @@ namespace OLED12864_I2C {
      * invert display
      * @param d true: invert / false: normal, eg: true
      */
-    //% blockId="OLED12864_I2C_INVERT" block="invert display %d"
+    //% blockId="OLED12864_I2C_INVERT" block="omwissel scherm achtergrond %d"
     //% weight=65 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function invert(d: boolean = true) {
@@ -324,7 +324,7 @@ namespace OLED12864_I2C {
     /**
      * draw / redraw screen
      */
-    //% blockId="OLED12864_I2C_DRAW" block="draw"
+    //% blockId="OLED12864_I2C_DRAW" block="tekenen"
     //% weight=64 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function draw() {
@@ -335,7 +335,7 @@ namespace OLED12864_I2C {
     /**
      * clear screen
      */
-    //% blockId="OLED12864_I2C_CLEAR" block="clear"
+    //% blockId="OLED12864_I2C_CLEAR" block="schoonmaken"
     //% weight=63 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function clear() {
@@ -347,7 +347,7 @@ namespace OLED12864_I2C {
     /**
      * turn on screen
      */
-    //% blockId="OLED12864_I2C_ON" block="turn on"
+    //% blockId="OLED12864_I2C_ON" block="scherm aan"
     //% weight=62 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function on() {
@@ -357,7 +357,7 @@ namespace OLED12864_I2C {
     /**
      * turn off screen
      */
-    //% blockId="OLED12864_I2C_OFF" block="turn off"
+    //% blockId="OLED12864_I2C_OFF" block="scherm uit"
     //% weight=61 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function off() {
@@ -368,7 +368,7 @@ namespace OLED12864_I2C {
      * zoom mode
      * @param d true zoom / false normal, eg: true
      */
-    //% blockId="OLED12864_I2C_ZOOM" block="zoom %d"
+    //% blockId="OLED12864_I2C_ZOOM" block="inzoomen %d"
     //% weight=60 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function zoom(d: boolean = true) {
@@ -380,7 +380,7 @@ namespace OLED12864_I2C {
      * OLED initialize
      * @param addr is i2c addr, eg: 60
      */
-    //% blockId="OLED12864_I2C_init" block="init OLED with addr %addr"
+    //% blockId="OLED12864_I2C_init" block="init OLED met I2C addr %addr"
     //% weight=100 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function init(addr: number) {
