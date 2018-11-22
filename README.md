@@ -1,4 +1,8 @@
 # I2C OLED 128x64
+OLED scherm voor gebruik met BBC Microbit
+
+## Nederlandstalige versie
+Die interne kode is Nederlandstalig
 
 makecode I2C OLED 128x64 extension for micro:bit.  
 
